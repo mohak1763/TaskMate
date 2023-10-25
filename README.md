@@ -1,4 +1,4 @@
-# Notes Making Web App
+# TaskMate
 
 A simple web application for creating, editing, and managing notes. This project uses HTML, CSS, and JavaScript, along with the Bootstrap framework for styling.
 
