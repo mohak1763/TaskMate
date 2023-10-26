@@ -1,6 +1,6 @@
 
 
-let addNotesContainer=document.getElementById('addNoteContainer')
+let addNotesContainer = document.getElementById('addNoteContainer')
 
 function showAllNotes(){
     addNotesContainer.style.display='none';
@@ -20,8 +20,8 @@ function showAllNotes(){
                           <div class="card-body">
                                <h5 class="card-title">${note.title}</h5>
                                 <p class="card-text">${note.descp}</p>
-                                <button class=" btn btn-warning card_btns" onclick="deleteNote(${index})"><img src="delete.svg" alt="" class="delete_btn"></button>
-                                <button class="btn btn-warning card_btns" onclick="editNote(${index})"><img src="edit.svg" alt="" class="edit_btn"></button>
+                                <button class=" btn  card_btns" onclick="deleteNote(${index})"><img src="dustbin.png" height="40px" alt="" class="delete_btn"></button>
+                                <button class="btn card_btns" onclick="editNote(${index})"><img src="pen.png" height="40px" alt="" class="edit_btn"></button>
                             </div>
     
                         </div>`
@@ -40,6 +40,11 @@ let addNoteBtn=document.getElementById('addNote')
 addNoteBtn.addEventListener('click',()=>{
     let allNotes;
     let notes=localStorage.getItem("notes");
+
+
+
+
+    
     if(notes === null){
         allNotes=[];
     }
@@ -49,6 +54,8 @@ addNoteBtn.addEventListener('click',()=>{
     let title=document.getElementById('title');
     let descp=document.getElementById('descp');
 
+
+    
     let newNoteObj = {
         title : title.value,
         descp : descp.value
