@@ -92,8 +92,8 @@ function editNote(noteIndex){
     let title=document.getElementById('title');
     let descp=document.getElementById('descp');
 
-    title.value=alNotes[noteIndex].title
-    descp.value=alNotes[noteIndex].descp
+    title.value=allNotes[noteIndex].title
+    descp.value=allNotes[noteIndex].descp
 
     let editCard = document.querySelector('.card')
     editCard.setAttribute('editIndex', `${noteIndex}`);
